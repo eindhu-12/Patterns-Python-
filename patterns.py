@@ -62,15 +62,22 @@
 # # *   
 
 y=int(input("Enter a number:-"))  
+jloop=y//2
 for i in range(y-1,-1,-1):
     # print(i)
-    for j in range(y):
+    for j in range(jloop+1):
         if i>=y//2:
-            if j<=i//2:
-                print(" ",end=" ")
+            if j<i//2 and i!=y//2:
+                print("_",end=" ")
             else:
                 print("*",end=" ")
-        # else:
+        else:
+            if j>i//2 :
+                print("*",end=" ")
+            else:
+                print("_",end=" ")
+                
+            
             
     print()
                 
