@@ -1,2 +1,3 @@
-
-col_itr=0
+elif(i<c):
+        #     print(j,end=" ")
+        #     c+
