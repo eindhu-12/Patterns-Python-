@@ -13,25 +13,6 @@ for i in range(a):
 # * * * * *
 # * * * * *
 
-# ----------------Square Hallow Pattern----------------
-n=int(input("Enter a Number:-"))
-for i in range(n):
-    for j in range(n):
-        if(i==0 or i==n-1):
-            print("*",end=" ")
-        else:
-            if j==0 or j==n-1:
-                print("*",end=" ")
-            else:
-                print(" ",end=" ")
-    print()
-
-# Enter a Number:-5
-# * * * * *
-# *       *
-# *       *
-# *       *
-# * * * * * 
 
 # ----------Rectangle Half Pyramid   ----------------        
 m=int(input("Enter a number:-"))
