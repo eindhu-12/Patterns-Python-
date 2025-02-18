@@ -92,3 +92,32 @@ for i in range(n-1,-1,-1):
 #     *       *     
 #       *   *       
 #         *  
+
+
+            
+n=int(input("Enter odd number:-"))
+for i in range(n):
+    for j in range(n):
+        if((i==0 or i==n-1) and j==n//2):
+            print("*",end=" ")
+        elif(i<=n//2):
+            if(j==n//2-i) or (j==n//2+i):
+                print("*",end=" ")
+            else:
+                print(" ",end=" ")
+        else:
+            if(j==i-n//2) or (j==n-i+(n//2)-1):
+                 print("*",end=" ")
+            else:
+                print(" ",end=" ")
+    print()
+    
+
+# Enter odd number:-7
+#       *       
+#     *   *     
+#   *       *   
+# *           * 
+#   *       *   
+#     *   *     
+#       * 
