@@ -94,6 +94,7 @@ for i in range(n-1,-1,-1):
 #         *  
 
 
+# ---------------- Hallow Diamond Pattern----------------
             
 n=int(input("Enter odd number:-"))
 for i in range(n):
