@@ -54,20 +54,20 @@ for i in range(1,x+1):
 # 0 1 0 1
 # 1 0 1 0 1
 
-# -----------Number Increasing Pyramid------------  
+# -----------Number Increasing Reverse Pyramid------------  
 
 n=int(input("Enter a Number:-"))
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if i<=j:
-            print(j,end=" ")
+for i in range(n-1,-1,-1):
+    for j in range(n):
+        if i>=j:
+            print(j+1,end=" ")
     print()
 
 # Enter a Number:-4
 # 1 2 3 4
-# 2 3 4
-# 3 4
-# 4
+# 1 2 3
+# 1 2
+# 1
 
 # -----------Number Triangular------------
   
@@ -111,7 +111,6 @@ col=(n*2)-1
 col_itr=0
 
 for i in range(n-1,-1,-1):
-    # print(i)
     c=(n-i)+1
     for j in range(col):
     
@@ -133,6 +132,8 @@ for i in range(n-1,-1,-1):
 #     2 1 2
 #   3 2 1 2 3
 # 4 3 2 1 2 3 4
+
+
     # ----------or---------
     # c=n-i
     # for j in range(col):
