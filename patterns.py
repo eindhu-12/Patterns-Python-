@@ -1,4 +1,24 @@
-# # ----------------Square Filled Pattern----------------
+# ----------------Rhombus Pattern ----------------
+  
+m=int(input("Enter a number:-"))   
+for i in range(m):
+    for j in range(m+i):
+        if j<i:
+            print(" ",end=" ")
+        else:
+            print("*",end=" ")
+    print()
+    
+# Enter a number:-5
+# * * * * *
+#   * * * * *
+#     * * * * *
+#       * * * * *
+#         * * * * *
+
+
+        
+# ----------------Square Filled Pattern----------------
 
 a=int(input("Enter a Number:-"))
 for i in range(a):
@@ -88,12 +108,14 @@ for i in range(x):
                 print("*",end=" ")
     print()
             
-# Enter a number:-5
+# Enter a number:-7
 # *
 # * *
 # * * *
+# * * * *
+# * * *
 # * *
-# *   
+# * 
 
 # ---------------- Left Pascal's Triangle ----------------
 
@@ -120,32 +142,63 @@ for i in range(y):
 # * * *
 # * * *
 #   * *   
-# Enter a number:-6
-#     *
-#   * *
-# * * *
-# * * *
-#   * *
-#     *  
+# Enter a number:-7
+#       *
+#     * *
+#   * * *
+# * * * *
+#   * * *
+#     * *
+#       *
 
+# ----------Triangle Star Pattern  ----------------     
+   
 
-# ----------------Rhombus Pattern ----------------
-  
-m=int(input("Enter a number:-"))   
-for i in range(m):
-    for j in range(m+i):
-        if j<i:
-            print(" ",end=" ")
-        else:
+n=int(input("Enter a number:-"))
+for i in range(n-1,-1,-1):
+    for j in range(n):
+        if(i<=j):
             print("*",end=" ")
+        else:
+            print(" ",end="")
     print()
     
 # Enter a number:-5
+#     *
+#    * *
+#   * * *
+#  * * * *
 # * * * * *
-#   * * * * *
-#     * * * * *
-#       * * * * *
-#         * * * * *
 
 
-        
+# ---------------- Diamond Pattern----------------
+
+n=int(input("Enter odd number:-"))
+for i in range(n):
+    for j in range(n):
+        if((i==0 or i==n-1) and j==n//2):
+            print("*",end=" ")
+        elif(i<=n//2):
+            if(j>=n//2-i) and (j<=n//2+i):
+                print("*",end="  ")
+            else:
+                print(" ",end=" ")
+        else:
+            if(j>=i-n//2) and (j<=n-i+(n//2)-1):
+                 print("*",end="  ")
+            else:
+                print(" ",end=" ")
+    print()
+    
+
+# Enter odd number:-5
+#     *     
+#   * * *   
+# * * * * *
+#   * * *
+#     *
+
+# ---------------- K Pattern----------------
+
+n
+
