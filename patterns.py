@@ -174,6 +174,31 @@ for i in range(n-1,-1,-1):
 # ---------------- Diamond Pattern----------------
 
 n=int(input("Enter odd number:-"))
+col=n//2
+for i in range(n):
+    for j in range(col,-1,-1):
+        if(i<=col):
+            if(i>=j):
+                print("*",end=" ")
+            else:
+                print(" ",end="")
+        else:
+            if(n-i>j):
+                print("*",end=" ")
+            else:
+                print(" ",end="")
+    print()
+
+# Enter odd number:-7
+#    * 
+#   * * 
+#  * * * 
+# * * * * 
+#  * * * 
+#   * * 
+#    * 
+
+n=int(input("Enter odd number:-"))
 for i in range(n):
     for j in range(n):
         if((i==0 or i==n-1) and j==n//2):
@@ -200,5 +225,25 @@ for i in range(n):
 
 # ---------------- K Pattern----------------
 
-n
 
+n=int(input("Enter odd number:-"))
+col=n//2
+for i in range(n):
+    for j in range(0,col+1):
+        if(i<=j):
+            print("*",end=" ")
+        else:
+            if(i-col>=j and i>col):
+                # print("hi")
+                print("*",end=" ")
+    print()
+    
+    
+# Enter odd number:-7
+# * * * * 
+# * * * 
+# * * 
+# * 
+# * * 
+# * * * 
+# * * * * 
