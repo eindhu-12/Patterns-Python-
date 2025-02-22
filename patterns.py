@@ -239,3 +239,11 @@ for i in range(n):
     print()
     
     
+# Enter odd number:-7
+# * * * * 
+# * * * 
+# * * 
+# * 
+# * * 
+# * * * 
+# * * * * 

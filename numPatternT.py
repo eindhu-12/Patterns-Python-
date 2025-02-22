@@ -199,49 +199,43 @@ for i in range(1,row+1):
 
 # -----------Pascal's Triangle ------------
 
-n=int(input("Enter Number of Rows:-"))
 
-for i in range(n-1,-1,-1):
-    c=1
-    half=n//2
-    for j in range(n):
-        if(i>j):
-            print(" ",end="")
-        # elif(n<=2 or i):
-        #     print(c,end=" ")
-        else:
-            if(n%2==0):
-                if(j<half):
-                    print(c,end=" ")
-                    c+=1
-                else:
-                    
-                    print(c,end=" ")
-                    c-=1
-    print()
-
-
-#  -------------------------z Pattern-------------       
-c=8
-for i in range(10-1,-1,-1):
-    
-    for j in range(10):
-        if(i==0 or i==9):
-            print("*",end=" ") 
-        else:
-            if(j==c):
-                print("*",end=" ")
-                c-=1
+n=int(input("Enter number of rows:-"))
+for i in range(1,n+1):
+    c=0
+    cnt=0
+    half=i//2
+    for j in range(n,0,-1):
+        
+        if(i>=j and i<=2):
+            print(1,end=" ")
+        elif(i%2==1 and i>=j):
+            if(cnt<=half):
+                print(c+1,end=" ")
+                c+=1
+                cnt+=1
             else:
-                print(" ",end=" ")
+                c-=1
+                print(c,end=" ")
+                cnt+=1
+        elif(i%2==0 and i>=j):
+            if(cnt<half):
+                print(c+1,end=" ")
+                c+=1
+                cnt+=1
+            else:
+                
+                print(c,end=" ")
+                c-=1
+                cnt+=1
+        else:
+            print(" ",end="")
     print()
-# * * * * * * * * * * 
-#                 *
-#               *
-#             *
-#           *
-#         *
-#       *
-#     *
-#   *
-# * * * * * * * * * *
+    
+
+# Enter number of rows:-5
+#     1 
+#    1 1 
+#   1 2 1 
+#  1 2 2 1 
+# 1 2 3 2 1 
