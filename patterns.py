@@ -97,6 +97,34 @@ for i in range(n):
 #         *
         
 # ---------------- Right Pascal's Triangle----------------
+
+n=int(input("Enter odd number:-"))
+m=(n//2)+1
+for i in range(n):
+    for j in range(m):
+        if(i>=j and i<=m ):
+            if(i%2==0 and j%2==0):
+                print("*",end="")
+            elif(i%2==1 and j%2==1):
+                print("*",end="")
+            print(" ",end=" ")
+        elif(i>=m and n-i>=j):
+            if(i%2==0 and j%2==0):
+                print("*",end="")
+            elif(i%2==1 and j%2==1):
+                print("*",end="")
+            print(" ",end=" ")
+    print()
+    
+# Enter odd number:-7
+# *  
+#   *  
+# *    *  
+#   *    *  
+# *    *    
+#   *    
+# *  
+
 x=int(input("Enter a number:-"))
 for i in range(x):
     for j in range(x):
