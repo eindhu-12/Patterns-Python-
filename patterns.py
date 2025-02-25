@@ -145,6 +145,42 @@ for i in range(x):
 # * *
 # * 
 
+# ---------------- Butterfly Star Pattern ----------------
+
+
+n=int(input("Enter odd number:-"))
+m=(n//2)
+for i in range(n):
+    for j in range(n):
+        if (i<=m and i>=j ) or (j>=(n-1)-i and i<=m):
+            if(i%2==0) and (j%2==0):
+                print("*",end=" ")
+            elif(i%2==1) and (j%2==1):
+                print("*",end=" ")
+            else:
+                print(" ",end=" ")
+                
+        elif (i>m and n-i>=j) or (j>=i and i>m):
+            if(i%2==0) and (j%2==0):
+                print("*",end=" ")
+            elif(i%2==1) and (j%2==1):
+                print("*",end=" ")
+            else:
+                print(" ",end=" ")
+        
+        else:
+            print(" ",end=" ")
+    print()
+            
+
+# Enter odd number:-7
+# *           * 
+#   *       *   
+# *   *   *   * 
+#   *   *   *   
+# *   *   *   * 
+#   *       *   
+# *           * 
 # ---------------- Left Pascal's Triangle ----------------
 
 y=int(input("Enter a number:-"))  
