@@ -1,5 +1,18 @@
-#  -------------------------N Pattern-------------       
+#  -------------------------E Pattern-------------       
+print("E-Pattern")
+n=9
+for i in range(n):
+    for j in range(n):
+        if(j==0 or i==0 or i==n-1 or i==n//2):
+            print("*",end=" ")
+        
+    print()
 
+
+print()
+
+#  -------------------------N Pattern-------------       
+print("N-Pattern")
 n=8
 for i in range(n):
     for j in range(n):
@@ -10,7 +23,11 @@ for i in range(n):
         else:
             print(" ",end=" ")
     print()
+    
+print()
 #  -------------------------Z Pattern-------------       
+
+print("Z-Pattern")
 
 c=8
 for i in range(10-1,-1,-1):
